@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun with triangles</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0px;
+        }
+
+        .nav-bar {
+        background-color: rgb(185, 233, 176);
+        height: 11vh;
+        display: flex;
+        align-items: center;
+        font-size: 1.4rem;
+        }
+        .links{
+        text-decoration: none;
+        padding-right: 1rem;
+        }
+        #first-heading{
+            background-color: rgb(185, 233, 176);
+            height: 2.2rem;
+            text-align: center;
+            font-size: 2rem;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-top:1rem;
+            font-size: 1.3rem;
+        }
+        .input-taken{
+        width: 60%;
+        font-size: 1rem;  
+        border-radius: 8px; 
+        margin-top: 1.1rem; 
+        margin-left: 1rem;
+       }
+        #isTriangle{
+            width: 30%;
+            margin-top: 1rem;
+            margin-left: 8rem;
+            border-radius: 10px;
+        }
+        #output{
+      
+            margin-top: 1rem;
+            font-size: 1.5rem; 
+            max-width: 70%;
+        }
+        label{
+            margin-top: 1.1rem;
+            margin-left: 1rem; 
+        }
+        #second-heading{
+            margin-left: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="first-heading">Fun with triangles</h1>
+    <div class="nav-bar">
+        <nav>
+            <a href="quiz.html"  class="links" target=_blank >Triangle quiz</a>
+            <a href="hypotenuse.html" target=_blank class="links">Calculate hypotenuse</a>
+            <a href="area.html" target=_blank class="links">Calculate area</a>
+        </nav>
+    </div>
+    <div class="container">
+    <h1 id="second-heading">Is triangle ?</h1>
+    <label for="Angle-1">Angle-1</label>
+    <input type="number" class="input-taken" placeholder="Enter in degrees">
+    <label for="Angle-2">Angle-2</label>
+    <input type="number" class="input-taken" placeholder="Enter in degrees">
+    <label for="Angle-3">Angle-3</label>
+    <input type="number" class="input-taken" placeholder="Enter in degrees">
+    <button id="isTriangle">check</button>
+    <div id="output"></div>                                
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

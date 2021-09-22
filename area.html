@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area of triangle</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+
+        }
+        .links{
+        text-decoration: none;
+        padding-right: 1rem;
+        }
+        .nav-bar {
+        background-color: rgb(185, 233, 176);
+        height: 11vh;
+        display: flex;
+        align-items: center;
+        font-size: 1.4rem;
+        }
+        #first-heading{
+            background-color: rgb(185, 233, 176);
+            height: 2.2rem;
+            text-align: center;
+            font-size: 2.4rem;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+        input{
+            font-size: 1.1rem;
+            width: 70%;
+            border-radius: 10px;
+            margin-top: 1.2rem;
+            margin-left: 1rem;
+
+        }
+        label{
+            font-size: 1.1rem;
+            margin-top: 1rem;
+            margin-left: 1rem;
+        }
+        #btn-submit{
+            width: 30%;
+            border-radius: 10px;
+            margin-left: 8rem;
+            margin-top: 1rem;
+        }
+        #output{
+        
+            max-width: 70%;
+            margin-top: 1.4rem;
+            font-size: 1.1rem;
+
+        }
+    </style>
+</head>
+<body>
+    <h1 id="first-heading">Fun with triangles</h1>
+    <div class="nav-bar">
+        <nav>
+            <a href="quiz.html" target=_blank class="links">Triangle quiz</a>
+            <a href="hypotenuse.html" target=_blank class="links">Calculate hypotenuse</a>
+            <a href="index.html" target=_blank class="links">Is triangle ?</a>
+        </nav>
+    </div>
+    <div class="container">
+    <h1>Calculate area of triangle</h1>
+    <label for="">Enter base length(cm)</label>
+    <input type="number" class="input-length" placeholder="Enter here">
+    <label for="">Enter base height(cm)</label>
+    <input type="number" class="input-length"placeholder="Enter here">
+    <button id="btn-submit">Submit</button>
+    <div id="output"></div>
+</div>
+    
+    <script src="area.js"></script>
+</body>
+</html>
